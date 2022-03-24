@@ -115,5 +115,25 @@ namespace DataStructure
             }
             return null;
         }
+
+        public void Insert(int data, int dataBefore)
+        {
+            Node node = new Node(data);
+
+            if (this.head == null)
+                this.head = this.tail = node;
+            else
+            {
+                Node nodeBefore = this.Search(dataBefore);
+                if (nodeBefore != null)
+                {
+                    node.next = nodeBefore.next;
+                    nodeBefore.next = node;
+                    if (nodeBefore == this.tail)
+                        this.tail = node;
+                }
+              
+            }
+        }
     }
 }

@@ -39,6 +39,8 @@ namespace DataStructure
                 Console.WriteLine("Node not found");
             }
 
+            linkedList.Insert(50, 3);
+            linkedList.Display();
         }
     }
 }
