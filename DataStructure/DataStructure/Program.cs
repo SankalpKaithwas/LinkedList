@@ -27,6 +27,18 @@ namespace DataStructure
 
             linkedList.DeleteEndNode();
             linkedList.Display();
+
+            Console.WriteLine("Enter number to search");
+            int data = int.Parse(Console.ReadLine());
+            if (linkedList.Search(data) != null)
+            {
+                Console.WriteLine("Node found");
+            }
+            else
+            {
+                Console.WriteLine("Node not found");
+            }
+
         }
     }
 }

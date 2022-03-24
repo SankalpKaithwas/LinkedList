@@ -3,7 +3,6 @@ namespace DataStructure
 {
     internal class LinkedLists
     {
-
         public Node head;
         public Node tail;
 
@@ -102,6 +101,19 @@ namespace DataStructure
                 temp.next = null;               
                 
             }
+        }
+        public Node Search(int data)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    return temp;
+                }
+                temp = temp.next;
+            }
+            return null;
         }
     }
 }
