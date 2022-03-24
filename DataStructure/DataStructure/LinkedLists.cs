@@ -60,5 +60,18 @@ namespace DataStructure
                 tail = node;//make new node as tail 
             }
         }
+        public void AddNodeAtStart(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                head = tail = node;
+            }
+            else
+            {
+                node.next = head;
+                head = node;
+            }
+        }
     }
 }

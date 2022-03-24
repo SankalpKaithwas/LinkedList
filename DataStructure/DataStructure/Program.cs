@@ -15,9 +15,11 @@ namespace DataStructure
             linkedList.AddNode(node_2);
             linkedList.AddNode(node_3);
             linkedList.Display();
-
-
+            
             linkedList.AppendNode(23);
+            linkedList.Display();
+            
+            linkedList.AddNodeAtStart(20);
             linkedList.Display();
         }
     }
