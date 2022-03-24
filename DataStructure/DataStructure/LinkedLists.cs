@@ -30,22 +30,35 @@ namespace DataStructure
             Node temp = head;
             if (temp == null)
             {
-                System.Console.WriteLine("Linked list is Empty");
+                Console.WriteLine("Linked list is Empty");
             }
             else
             {
-                System.Console.WriteLine("Elements are");
+                Console.WriteLine("Elements are");
                 while (temp != null)
                 {
-                    System.Console.Write(temp.data);
+                    Console.Write(temp.data);
                     if (temp.next != null)
                     {
-                        System.Console.WriteLine(" ");
+                        Console.Write("-> ");
                     }
                     temp = temp.next;
                 }
             }
             Console.WriteLine();
+        }
+        public void AppendNode(int data)
+        {
+            Node node = new Node(data);
+            if (head == null) // if empty
+            {
+                head = tail = node;
+            }
+            else
+            {
+                tail.next = node;//add at end
+                tail = node;//make new node as tail 
+            }
         }
     }
 }
