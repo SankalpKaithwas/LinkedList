@@ -41,6 +41,9 @@ namespace DataStructure
 
             linkedList.Insert(50, 3);
             linkedList.Display();
+
+            linkedList.DeleteNode(50);
+            linkedList.Display();
         }
     }
 }

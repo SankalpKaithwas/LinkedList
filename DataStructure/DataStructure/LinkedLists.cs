@@ -135,5 +135,52 @@ namespace DataStructure
               
             }
         }
+        public void DeleteNode(int data)
+        {
+            if (this.head == null)
+            {
+                System.Console.WriteLine("Empty");
+            }
+            else
+            {
+                Node node = this.Search(data);
+
+                if (node == null)
+                {
+                    System.Console.WriteLine("Not found");
+                }
+                else if (node == this.head)
+                {
+                    this.head = this.head.next;
+                    if (node == this.tail)
+                    {
+                        tail = null;
+                    }
+                }
+                else
+                {
+                    Node nodeBefore = null;
+                    Node temp = this.head;
+                    while (temp != null)
+                    {
+                        if (temp.next == node)
+                        {
+                            nodeBefore = temp;
+                            break;
+                        }
+                        temp = temp.next;
+                    }
+                    nodeBefore.next = node.next;
+                    if (node == this.tail)
+                    {
+                        this.tail = nodeBefore;
+                    }
+                    else
+                    {
+                        node.next = null;
+                    }
+                }
+            }
+        }
     }
 }
