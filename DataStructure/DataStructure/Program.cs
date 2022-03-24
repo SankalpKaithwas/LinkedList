@@ -24,6 +24,9 @@ namespace DataStructure
 
             linkedList.DeleteNodeAtFirst();
             linkedList.Display();
+
+            linkedList.DeleteEndNode();
+            linkedList.Display();
         }
     }
 }

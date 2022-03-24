@@ -77,13 +77,30 @@ namespace DataStructure
         {
             if (this.head == null)
             {
-                System.Console.WriteLine("List is empty");
+               Console.WriteLine("List is empty");
             }
             else
             {
                 Node temp = this.head;
                 this.head = this.head.next;
-                System.Console.WriteLine("Removed from list " + temp.data);
+                Console.WriteLine("Removed from list " + temp.data);
+            }
+        }
+        public void DeleteEndNode()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            else
+            {
+                Node temp = this.head;
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }                
+                temp.next = null;               
+                
             }
         }
     }
