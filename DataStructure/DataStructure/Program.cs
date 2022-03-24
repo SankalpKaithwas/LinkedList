@@ -21,6 +21,9 @@ namespace DataStructure
             
             linkedList.AddNodeAtStart(20);
             linkedList.Display();
+
+            linkedList.DeleteNodeAtFirst();
+            linkedList.Display();
         }
     }
 }

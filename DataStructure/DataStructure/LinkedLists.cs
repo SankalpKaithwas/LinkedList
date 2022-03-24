@@ -73,5 +73,18 @@ namespace DataStructure
                 head = node;
             }
         }
+        public void DeleteNodeAtFirst()
+        {
+            if (this.head == null)
+            {
+                System.Console.WriteLine("List is empty");
+            }
+            else
+            {
+                Node temp = this.head;
+                this.head = this.head.next;
+                System.Console.WriteLine("Removed from list " + temp.data);
+            }
+        }
     }
 }
