@@ -16,7 +16,7 @@ namespace DataStructure
         }
         public void DisplayStack()
         {
-            Console.WriteLine("Stack elements are");
+            Console.WriteLine("Stack elements are -");
             linkedList.Display();
         }
 

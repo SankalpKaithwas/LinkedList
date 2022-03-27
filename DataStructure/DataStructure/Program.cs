@@ -48,6 +48,17 @@ namespace DataStructure
             stack.Pop();
             stack.DisplayStack();
 
+            Queue queue = new Queue();
+            queue.Enqueue(45);
+            queue.Enqueue(7);
+            queue.Enqueue(4);
+            queue.DisplayQueue();           
+            queue.Dequeue();
+            queue.DisplayQueue();
+            queue.Enqueue(56);
+            queue.DisplayQueue();
+
+
         }
     }
 }
