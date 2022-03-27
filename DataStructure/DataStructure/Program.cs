@@ -15,16 +15,12 @@ namespace DataStructure
             linkedList.AddNode(node_2);
             linkedList.AddNode(node_3);
             linkedList.Display();
-            
-            linkedList.AppendNode(23);
+            linkedList.AppendNode(4);
             linkedList.Display();
-            
             linkedList.AddNodeAtStart(20);
             linkedList.Display();
-
             linkedList.DeleteNodeAtFirst();
             linkedList.Display();
-
             linkedList.DeleteEndNode();
             linkedList.Display();
 
@@ -41,9 +37,17 @@ namespace DataStructure
 
             linkedList.Insert(50, 3);
             linkedList.Display();
-
             linkedList.DeleteNode(50);
             linkedList.Display();
+
+            Stack stack = new Stack();
+            stack.Push(node_1);
+            stack.Push(node_2);
+            stack.Push(node_3);
+            stack.DisplayStack();
+            stack.Pop();
+            stack.DisplayStack();
+
         }
     }
 }

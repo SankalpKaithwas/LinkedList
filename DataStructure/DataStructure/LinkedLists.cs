@@ -56,7 +56,7 @@ namespace DataStructure
             else
             {
                 tail.next = node;//add at end
-                tail = node;//make new node as tail 
+                tail = node;//make new node as tail    
             }
         }
         public void AddNodeAtStart(int data)
@@ -76,7 +76,7 @@ namespace DataStructure
         {
             if (this.head == null)
             {
-               Console.WriteLine("List is empty");
+                Console.WriteLine("List is empty");
             }
             else
             {
@@ -97,9 +97,9 @@ namespace DataStructure
                 while (temp.next.next != null)
                 {
                     temp = temp.next;
-                }                
-                temp.next = null;               
-                
+                }
+                temp.next = null;
+
             }
         }
         public Node Search(int data)
@@ -132,7 +132,7 @@ namespace DataStructure
                     if (nodeBefore == this.tail)
                         this.tail = node;
                 }
-              
+
             }
         }
         public void DeleteNode(int data)
